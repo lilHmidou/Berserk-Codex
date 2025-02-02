@@ -1,0 +1,52 @@
+<div class="map-page-container">
+
+  <div class="map-section">
+    <div class="map-wrapper">
+      <img 
+        src="/images/berserk_map.webp" 
+        alt="Carte de Berserk" 
+        class="map-image"
+      >
+      
+      <div 
+        *ngFor="let event of events"
+        class="event-marker"
+        [style.left.%]="event.x"
+        [style.top.%]="event.y"
+        (click)="showEvent(event)"
+      >
+        <div class="marker-dot"></div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="selectedEvent" class="event-modal">
+    <div class="modal-content">
+      <button class="close-button" (click)="closeModal()">&times;</button>
+      
+      <div class="modal-grid">
+        <img 
+          [src]="selectedEvent.image" 
+          alt="Événement" 
+          class="event-image"
+        >
+        
+        <div class="event-scrollable">
+          <div class="modal-header">
+            <button class="nav-button" (click)="navigate('prev')" [disabled]="currentEventIndex === 0">‹</button>
+            <h3>{{ selectedEvent.title }}</h3>
+            <button class="nav-button" (click)="navigate('next')" [disabled]="currentEventIndex === events.length - 1">›</button>
+          </div>
+          
+          <div class="event-body">
+            <p class="event-description">{{ selectedEvent.description }}</p>
+            <div class="chapter-info">
+              <span class="chapter-label">Chapitre</span>
+              <span class="chapter-number">{{ selectedEvent.chapter }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
