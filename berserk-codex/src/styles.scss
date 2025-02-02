@@ -1,0 +1,11 @@
+@import "bootstrap/scss/bootstrap";
+
+:root {
+  --bs-body-bg: #fff;
+  --bs-body-color: #212529;
+}
+
+[data-bs-theme='dark'] {
+  --bs-body-bg: #212529;
+  --bs-body-color: #fff;
+}
