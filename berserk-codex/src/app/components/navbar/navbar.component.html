@@ -3,25 +3,25 @@
       <a class="navbar-brand" routerLink="/">
         <img src="/images/logo.webp" alt="Logo" width="30" class="d-inline-block align-text-top">
       </a>
-      
-      <button 
-        class="navbar-toggler" 
-        type="button" 
+
+      <button
+        class="navbar-toggler"
+        type="button"
         (click)="isMenuCollapsed = !isMenuCollapsed"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-  
+
     <div class="collapse navbar-collapse" [class.show]="!isMenuCollapsed">
         <ul class="navbar-nav ms-auto">
             <li class="nav-item">
                 <a class="nav-link" routerLink="/" routerLinkActive="active">Accueil</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLink="/book" routerLinkActive="active">Encyclopédie</a>
+                <a class="nav-link" routerLink="/encyclopedie" routerLinkActive="active">Encyclopédie</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLink="/weapon" routerLinkActive="active">Armes & Artéfacts</a>
+                <a class="nav-link" routerLink="/armes-artifacts" routerLinkActive="active">Armes & Artéfacts</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" routerLink="/timeline" routerLinkActive="active">Timeline</a>

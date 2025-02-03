@@ -1,0 +1,117 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  padding: 8rem 2rem 2rem; /* Ajoute un padding-top pour éviter que le contenu soit caché sous la navbar */
+  background-image: url('/images/bkarmes.jpg'); /* Définir l'image de fond */
+  //background-color: #121212;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.arme-card {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.arme-card:hover {
+  transform: scale(1.05);
+}
+
+.carousel-container {
+  position: relative;  /* Permet de positionner les flèches et le contenu par rapport à ce conteneur */
+  margin: 0 auto;
+  max-width: 900px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 20px;
+  overflow: hidden; /* Empêche les éléments de déborder de la boîte */
+}
+
+.carousel-item {
+  position: relative;
+  display: block; /* Par défaut, il sera centré sans flexbox */
+  text-align: center; /* Centrer le texte */
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-image {
+  width: 500px;
+  height: 380px;
+  border-radius: 10px;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-image:hover {
+    transform: scale(1.1); /* Effet de zoom */
+}
+
+.description {
+  color: #fff;
+  margin-top: 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #ff4d4d;
+  transition: color 0.3s ease;
+}
+
+h2:hover {
+  color: #f5a623; /* Changer la couleur au survol */
+}
+
+.carousel-arrow {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.carousel-arrow:hover {
+  transform: scale(1.2);
+}
+
+.carousel-arrow.left {
+  position: absolute; /* Positionner la flèche à gauche */
+  left: 10px;
+  top: 50%; /* Placer la flèche au milieu du carrousel verticalement */
+  transform: translateY(-50%); /* Centrer verticalement la flèche */
+}
+
+.carousel-arrow.right {
+  position: absolute; /* Positionner la flèche à droite */
+  right: 10px;
+  top: 50%; /* Placer la flèche au milieu du carrousel verticalement */
+  transform: translateY(-50%); /* Centrer verticalement la flèche */
+}
+
+/* Halo lumineux derrière l'image */
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, rgba(255, 0, 0, 0.6), rgba(255, 0, 0, 0) 70%);
+  filter: blur(40px);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out, transform 0.6s ease-in-out;
+}
+
+/* Animation du halo au survol */
+.carousel-item:hover::before {
+  opacity: 1;
+  transform: rotate(360deg) scale(1.2);
+}
+

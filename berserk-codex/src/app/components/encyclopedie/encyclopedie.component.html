@@ -1,0 +1,24 @@
+<div class="encyclopedia">
+  <div class="header">
+    <h1>Liste des personnages</h1>
+    <div class="sort-options">
+      <label for="sort">Trier :</label>
+      <select id="sort" (change)="setSortOrder($event)">
+        <option value="A-Z">A-Z</option>
+        <option value="Z-A">Z-A</option>
+        <option value="Apparition">Ordre d'apparition</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="character-list">
+    <div *ngFor="let character of sortedCharacters" class="character-card">
+      <img ngSrc="{{character.image}}" width="200" height="300" alt="{{character.name}}">
+      <div class="character-info">
+        <h2>{{ character.name }}</h2>
+        <p>{{ character.description }}</p>
+        <span class="arc">Arc : {{ character.arc }}</span>
+      </div>
+    </div>
+  </div>
+</div>
