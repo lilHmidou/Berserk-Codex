@@ -12,7 +12,7 @@ import { StoryArc } from '../../types/story-arc';
   
 })
 export class ArcFriezeComponent implements OnInit{
-  arcs: StoryArc[] = [];
+  public arcs: StoryArc[] = [];
 
   constructor(private mockDataService: MockDataService) {}
 
@@ -22,15 +22,15 @@ export class ArcFriezeComponent implements OnInit{
     });
   }
 
-  selectedArc: StoryArc | null = null;
-  currentIndex = 0;
+  public selectedArc: StoryArc | null = null;
+  public currentIndex = 0;
 
-  selectArc(arc: StoryArc, index: number): void {
+  public selectArc(arc: StoryArc, index: number): void {
     this.selectedArc = arc;
     this.currentIndex = index;
   }
 
-  navigate(direction: 'prev' | 'next'): void {
+  public navigate(direction: 'prev' | 'next'): void {
     if (direction === 'prev' && this.currentIndex > 0) {
       this.currentIndex--;
     } else if (direction === 'next' && this.currentIndex < this.arcs.length - 1) {

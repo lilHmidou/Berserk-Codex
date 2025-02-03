@@ -10,9 +10,9 @@ import { NgIf } from '@angular/common' ;
   
 })
 export class HomeComponent {
-  showFeatures = false; 
+  public showFeatures = false; 
 
-  toggleFeatures() {
+  public toggleFeatures() {
     this.showFeatures = !this.showFeatures;
   }
 }

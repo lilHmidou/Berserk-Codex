@@ -8,11 +8,11 @@ import { Observable } from 'rxjs';
 export class MockDataService {
   constructor(private http: HttpClient) { }
 
-  getMapEvents(): Observable<any> {
+  public getMapEvents(): Observable<any> {
     return this.http.get('/mocks/map-events.json');
   }
 
-  getStoryArcs(): Observable<any> {
+  public getStoryArcs(): Observable<any> {
     return this.http.get('/mocks/story-arcs.json');
   }
 }

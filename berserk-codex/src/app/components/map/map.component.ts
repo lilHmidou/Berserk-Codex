@@ -11,7 +11,7 @@ import { MapEvent } from '../../types/map-event';
   imports: [NgIf, NgFor]
 })
 export class MapComponent implements OnInit{
-  events: MapEvent[] = [];
+  public events: MapEvent[] = [];
   constructor(private mockDataService: MockDataService) {}
 
   ngOnInit() {
@@ -20,15 +20,15 @@ export class MapComponent implements OnInit{
     });
   }
 
-  selectedEvent: MapEvent | null = null;
-  currentEventIndex = 0;
+  public selectedEvent: MapEvent | null = null;
+  public currentEventIndex = 0;
 
-  showEvent(event: MapEvent): void {
+  public showEvent(event: MapEvent): void {
     this.selectedEvent = event;
     this.currentEventIndex = this.events.findIndex(e => e.id === event.id);
   }
 
-  navigate(direction: 'prev' | 'next'): void {
+  public navigate(direction: 'prev' | 'next'): void {
     if (direction === 'prev' && this.currentEventIndex > 0) {
       this.currentEventIndex--;
     } else if (direction === 'next' && this.currentEventIndex < this.events.length - 1) {
@@ -37,7 +37,7 @@ export class MapComponent implements OnInit{
     this.selectedEvent = this.events[this.currentEventIndex];
   }
 
-  closeModal(): void {
+  public closeModal(): void {
     this.selectedEvent = null;
   }
 }
