@@ -1,0 +1,114 @@
+
+
+  {
+    "mapEvents": [
+      {
+        "id": 1,
+        "title": "La Tour de la Condamnation",
+        "image": "/images/events/tower.webp",
+        "description": "Griffith y est torturé pendant un an après sa capture.",
+        "x": 52.3,
+        "y": 38.7,
+        "chapter": 63
+      },
+      {
+        "id": 2,
+        "title": "La Forge de Godo",
+        "image": "/images/events/dragon-slayer.png",
+        "description": "Lieu de création du Dragon Slayer",
+        "x": 29.1,
+        "y": 65.4,
+        "chapter": 94
+      },
+      {
+        "id": 3,
+        "title": "L'Éclipse",
+        "image": "/images/events/eclipse.webp",
+        "description": "Sacrifice de la Bande du Faucon par Griffith",
+        "x": 48.5,
+        "y": 37.2,
+        "chapter": 87
+      },
+      {
+        "id": 4,
+        "title": "La Chute de Doldrey",
+        "image": "/images/events/doldrey-battle.webp",
+        "description": "Guts et la Bande du Faucon remportent une bataille décisive contre l'Empire Tudor.",
+        "x": 44.8,
+        "y": 50.6,
+        "chapter": 55
+      },
+      {
+        "id": 5,
+        "title": "L'Apparition de Femto",
+        "image": "/images/events/femto.webp",
+        "description": "Griffith renaît sous la forme de Femto après l'Éclipse.",
+        "x": 49.2,
+        "y": 36.8,
+        "chapter": 90
+      },
+      {
+        "id": 6,
+        "title": "La Bataille de Vritannis",
+        "image": "/images/events/vritannis.webp",
+        "description": "Guts et ses compagnons affrontent une armée Kushan tout en cherchant un moyen d'atteindre Elfhelm.",
+        "x": 60.3,
+        "y": 42.5,
+        "chapter": 287
+      },
+      {
+        "id": 7,
+        "title": "L'Arrivée à Elfhelm",
+        "image": "/images/events/elfhelm.webp",
+        "description": "Guts et son groupe atteignent Elfhelm, où Casca retrouve ses esprits.",
+        "x": 70.4,
+        "y": 55.2,
+        "chapter": 355
+      },
+      {
+        "id": 8,
+        "title": "La Chute d'Elfhelm",
+        "image": "/images/events/elfhelm-destruction.webp",
+        "description": "Le monde astral s'effondre et Griffith provoque la destruction d'Elfhelm.",
+        "x": 72.8,
+        "y": 56.9,
+        "chapter": 364
+      },
+      {
+        "id": 9,
+        "title": "Le Combat contre Zodd",
+        "image": "/images/events/zodd-battle.webp",
+        "description": "Premier affrontement entre Guts et Nosferatu Zodd, révélant l'existence des Apôtres.",
+        "x": 50.1,
+        "y": 45.6,
+        "chapter": 39
+      },
+      {
+        "id": 10,
+        "title": "La Création de Falconia",
+        "image": "/images/events/falconia.webp",
+        "description": "Griffith bâtit son royaume divin après la fusion des plans astral et physique.",
+        "x": 65.9,
+        "y": 40.3,
+        "chapter": 342
+      },
+      {
+        "id": 11,
+        "title": "Le Combat contre Ganishka",
+        "image": "/images/events/ganishka-battle.webp",
+        "description": "Griffith et son armée affrontent l'empereur Kushan Ganishka, transformé en un gigantesque monstre.",
+        "x": 58.2,
+        "y": 38.4,
+        "chapter": 303
+      },
+      {
+        "id": 12,
+        "title": "La Bataille contre les Trolls",
+        "image": "/images/events/troll-battle.webp",
+        "description": "Guts et Schierke défendent un village attaqué par des hordes de trolls.",
+        "x": 37.6,
+        "y": 48.7,
+        "chapter": 220
+      }
+    ]
+  }
