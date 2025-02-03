@@ -1,15 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {NgIf, NgFor} from '@angular/common';
-
-interface MapEvent {
-  id: number;
-  title: string;
-  image: string;
-  description: string;
-  x: number; // Position horizontale en % (0-100)
-  y: number; // Position verticale en % (0-100)
-  chapter: number;
-}
+import { MockDataService } from '../../services/mock-data.service';
+import { MapEvent } from '../../types/map-event';
 
 @Component({
   selector: 'app-map',
@@ -18,37 +10,25 @@ interface MapEvent {
   styleUrls: ['./map.component.scss'],
   imports: [NgIf, NgFor]
 })
-export class MapComponent {
-  events: MapEvent[] = [
-    {
-      id: 1,
-      title: 'L\'Éclipse',
-      image: '/images/events/eclipse.webp',
-      description: 'Sacrifice de la Bande du Faucon par Griffith',
-      x: 48.5,
-      y: 37.2,
-      chapter: 87
-    },
-    {
-      id: 2,
-      title: 'Forge de Godo',
-      image: '/images/events/dragon-slayer.png',
-      description: 'Création du Dragon Slayer',
-      x: 32.1,
-      y: 61.8,
-      chapter: 94
-    }
-  ];
+export class MapComponent implements OnInit{
+  public events: MapEvent[] = [];
+  constructor(private mockDataService: MockDataService) {}
 
-  selectedEvent: MapEvent | null = null;
-  currentEventIndex = 0;
+  ngOnInit() {
+    this.mockDataService.getMapEvents().subscribe((data: { mapEvents: MapEvent[] }) => {
+      this.events = data.mapEvents;
+    });
+  }
 
-  showEvent(event: MapEvent): void {
+  public selectedEvent: MapEvent | null = null;
+  public currentEventIndex = 0;
+
+  public showEvent(event: MapEvent): void {
     this.selectedEvent = event;
     this.currentEventIndex = this.events.findIndex(e => e.id === event.id);
   }
 
-  navigate(direction: 'prev' | 'next'): void {
+  public navigate(direction: 'prev' | 'next'): void {
     if (direction === 'prev' && this.currentEventIndex > 0) {
       this.currentEventIndex--;
     } else if (direction === 'next' && this.currentEventIndex < this.events.length - 1) {
@@ -57,7 +37,7 @@ export class MapComponent {
     this.selectedEvent = this.events[this.currentEventIndex];
   }
 
-  closeModal(): void {
+  public closeModal(): void {
     this.selectedEvent = null;
   }
 }

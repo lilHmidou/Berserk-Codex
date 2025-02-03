@@ -1,0 +1,70 @@
+{
+    "storyArcs": [
+        {
+        "id": 1,
+        "title": "L'Âge du Black Swordsman (1990-1991)",
+        "period": "Volumes 1-3",
+        "summary": "Guts, surnommé le Black Swordsman, traque les Apôtres tout en dévoilant peu à peu son passé tragique. Points clés : • Introduction de Guts et de son épée colossale • Première apparition de Puck • Combat contre le Comte et l'invocation des God Hand",
+        "coverImage": "/images/arcs/black-swordsman-cover.webp",
+        "plates": [
+        "/images/arcs/black-swordsman-1.jpg",
+        "/images/arcs/black-swordsman-2.png"
+        ]
+        },
+      {
+        "id": 2,
+        "title": "L'Âge d'Or (1997-1998)",
+        "period": "Volumes 3-11",
+        "summary": "Cet arc emblématique retrace l'ascension de Griffith et de la Bande du Faucon. On y découvre Guts, mercenaire solitaire, qui rejoint progressivement le groupe. Points clés : • La bataille de Doldrey • La relation complexe Guts/Griffith • Les prémices de l'Éclipse • La chute dramatique de Griffith",
+        "coverImage": "/images/arcs/golden-age-cover.webp",
+        "plates": [
+          "/images/arcs/golden-age-1.jpg",
+          "/images/arcs/golden-age-2.png"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "L'Éclipse (1998)",
+        "period": "Volume 12-14",
+        "summary": "L'apogée tragique de la saga. Après un an d'emprisonnement, Griffith déclenche l'Éclipse pour accomplir son rêve. Événements marquants : • Sacrifice de la Bande du Faucon • Transformation de Griffith en Femto • Naissance du Berserker Armor • Marque du sacrifice sur Guts et Casca",
+        "coverImage": "/images/arcs/eclipse-cover.webp",
+        "plates": [
+          "/images/arcs/eclipse-1.jpg",
+          "/images/arcs/eclipse-2.webp"
+        ]
+      },
+    {
+        "id": 3,
+        "title": "L'Âge Noir (1999-2002)",
+        "period": "Volumes 15-21",
+        "summary": "Guts entame sa quête vengeresse contre les God Hand et les Apôtres. Événements majeurs : • Introduction de Puck • Apparition de Mozgus et des Inquisiteurs • Première apparition de Zodd dans l'arc principal • Casca devient instable",
+        "coverImage": "/images/arcs/black-swordsman-cover.webp",
+        "plates": [
+        "/images/arcs/black-swordsman-1.jpg",
+        "/images/arcs/black-swordsman-2.png"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "L'Âge du Faucon Millénaire (2003-2010)",
+        "period": "Volumes 22-35",
+        "summary": "Guts réunit de nouveaux compagnons tandis que Griffith bâtit son empire. Points clés : • Introduction de Schierke et Farnese • Bataille de Vritannis • Griffith devient le roi de Falconia • Guts obtient l'Armure du Berserker",
+        "coverImage": "/images/arcs/millennium-falcon-cover.webp",
+        "plates": [
+        "/images/arcs/millennium-falcon-1.jpg",
+        "/images/arcs/millennium-falcon-2.png"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "L'Arc de Fantasia (2010-Présent)",
+        "period": "Volumes 35-41",
+        "summary": "Le monde fusionne avec le plan astral, provoquant un chaos sans précédent. Points clés : • Elfhelm et la tentative de guérison de Casca • Apparition du Dieu Mer • Griffith atteint son apogée en Falconia • Le monde envahi par les créatures du plan astral",
+        "coverImage": "/images/arcs/fantasia-cover.webp",
+        "plates": [
+        "/images/arcs/fantasia-1.jpg",
+        "/images/arcs/fantasia-2.webp"
+        ]
+    }
+    ]
+  }

@@ -1,0 +1,45 @@
+<div class="arc-container">
+    <h2 class="section-title">Frise Chronologique de Berserk</h2>
+    
+    <!-- Frise -->
+    <div class="timeline">
+      <div 
+        *ngFor="let arc of arcs; let i = index"
+        class="timeline-item"
+        [class.active]="selectedArc?.id === arc.id"
+        (click)="selectArc(arc, i)"
+      >
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h3>{{ arc.title }}</h3>
+          <p class="period">{{ arc.period }}</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Détails de l'arc sélectionner -->
+    <div *ngIf="selectedArc" class="arc-details">
+      <div class="navigation-buttons">
+        <button (click)="navigate('prev')" [disabled]="currentIndex === 0">← Précédent</button>
+        <button (click)="navigate('next')" [disabled]="currentIndex === arcs.length - 1">Suivant →</button>
+      </div>
+  
+      <div class="arc-header">
+        <img [src]="selectedArc.coverImage" alt="Couverture" class="cover-image">
+        <div class="arc-info">
+          <h2>{{ selectedArc.title }}</h2>
+          <p class="period">{{ selectedArc.period }}</p>
+          <p class="summary">{{ selectedArc.summary }}</p>
+        </div>
+      </div>
+  
+      <div class="plates-grid">
+        <img 
+          *ngFor="let plate of selectedArc.plates"
+          [src]="plate" 
+          alt="Planche" 
+          class="arc-plate"
+        >
+      </div>
+    </div>
+  </div>
