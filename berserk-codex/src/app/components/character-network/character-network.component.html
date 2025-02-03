@@ -1,0 +1,12 @@
+<div class="network-wrapper">
+    <div id="network-container" class="network-canvas"></div>
+  
+    <!-- Légende des groupes -->
+    <div class="legend" *ngIf="groups.length > 0">
+      <h4>Groupes :</h4>
+      <div class="legend-item" *ngFor="let group of groups">
+        <div class="color-box" [style.background]="group.color"></div>
+        <span>{{ group.name }}</span>
+      </div>
+    </div>
+  </div>

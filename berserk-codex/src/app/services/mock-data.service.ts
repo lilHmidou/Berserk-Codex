@@ -15,4 +15,8 @@ export class MockDataService {
   getStoryArcs(): Observable<any> {
     return this.http.get('/mocks/story-arcs.json');
   }
+
+  getCharacterRelationships(): Observable<any> {
+    return this.http.get('/mocks/relationships.json');
+  }
 }

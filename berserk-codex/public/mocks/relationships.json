@@ -1,0 +1,24 @@
+{
+    "nodes": [
+      {
+        "id": 1,
+        "label": "Guts",
+        "image": "assets/characters/guts.webp",
+        "bio": "Le Épéiste Noir...",
+        "group": "Bande du Faucon"
+      },
+      {
+        "id": 2,
+        "label": "Griffith",
+        "group": "Nouvelle Bande du Faucon"
+      }
+    ],
+    "edges": [
+      {
+        "from": 1,
+        "to": 2,
+        "label": "Rivalité/Fraternité",
+        "color": "#8b0000"
+      }
+    ]
+  }

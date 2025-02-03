@@ -1,0 +1,66 @@
+.network-wrapper {
+    background: #0a0a0a;
+    border: 2px solid #8b0000;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 2rem auto;
+    max-width: 1200px;
+  }
+  
+  .network-canvas {
+    height: 700px;
+    width: 100%;
+  }
+  
+  .network-legend {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #ddd;
+    }
+  
+    .color-box {
+      width: 20px;
+      height: 20px;
+      border: 1px solid #444;
+    }
+  }
+
+  .legend {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(10, 10, 10, 0.9);
+    padding: 1rem;
+    border: 1px solid #8b0000;
+    border-radius: 5px;
+  
+    h4 {
+      color: #8b0000;
+      margin-bottom: 0.5rem;
+    }
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.3rem 0;
+    
+    .color-box {
+      width: 20px;
+      height: 20px;
+      border: 1px solid #444;
+    }
+  
+    span {
+      color: #ddd;
+      font-size: 0.9rem;
+    }
+  }

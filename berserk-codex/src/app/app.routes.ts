@@ -3,9 +3,11 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { MapComponent } from './components/map/map.component';
 import { ArcFriezeComponent } from './components/arc-frieze/arc-frieze.component';
+import { CharacterNetworkComponent } from './components/character-network/character-network.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'map', component: MapComponent},
-  { path:'arc-frieze', component:ArcFriezeComponent}
+  { path:'arc-frieze', component:ArcFriezeComponent},
+  {path:'relationships', component:CharacterNetworkComponent}
 ];
