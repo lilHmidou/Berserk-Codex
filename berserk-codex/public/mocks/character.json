@@ -1,24 +1,90 @@
 {
     "characters": [
-        { "name": "Guts", 
-        "image": "/images/character/guts.jpg", 
-        "description": "Le guerrier maudit et porteur du Dragon Slayer.", 
+        { "name": "Guts",
+        "image": "/images/character/guts.jpg",
+        "description": "Le guerrier maudit et porteur du Dragon Slayer.",
         "arc": "Prologue" },
-        { "name": "Griffith", 
-        "image": "/images/character/griffith.jpg", 
-        "description": "Leader charismatique de la Bande du Faucon.", 
+        { "name": "Griffith",
+        "image": "/images/character/griffith.jpg",
+        "description": "Leader charismatique de la Bande du Faucon.",
         "arc": "L’Âge d’Or" },
-        { "name": "Casca", 
-        "image": "/images/character/casca.jpg", 
-        "description": "Brillante stratège et guerrière.", 
+        {
+          "name": "Void",
+          "image": "/images/character/void.jpg",
+          "description": "Le leader des God Hand, représentant le vide et la destruction.",
+          "arc": "Black Swordsman"
+        },
+        {
+          "name": "Ubik",
+          "image": "/images/character/ubik.jpg",
+          "description": "Membre des God Hand, représenté comme un être cynique et manipulateur.",
+          "arc": "Black Swordsman"
+        },
+        {
+          "name": "Conrad",
+          "image": "/images/character/conrad.jpg",
+          "description": "Membre des God Hand, associé à la maladie et la souffrance.",
+          "arc": "Black Swordsman"
+        },
+        {
+          "name": "Femto",
+          "image": "/images/character/femto.jpg",
+          "description": "Membre des God Hand, un être puissant et mystérieux que guts semble haïr plus que tout.",
+          "arc": "Black Swordsman"
+        },
+        {
+          "name": "Slan",
+          "image": "/images/character/slan.jpg",
+          "description": "Membre des God Hand, associée à la séduction et la manipulation.",
+          "arc": "Black Swordsman"
+        },
+        { "name": "Casca",
+        "image": "/images/character/casca.jpg",
+        "description": "Brillante stratège et guerrière.",
         "arc": "L’Âge d’Or" },
-        { "name": "Zodd", 
-        "image": "/images/character/zodd.jpg", 
-        "description": "Démon immortel surnommé 'Nosferatu'.", 
+        { "name": "Zodd",
+        "image": "/images/character/zodd.jpg",
+        "description": "Démon immortel surnommé 'Nosferatu'.",
         "arc": "L’Âge d’Or" },
-        { "name": "Skull Knight", 
-        "image": "/images/character/skullknight.jpg", 
-        "description": "Un mystérieux chevalier spectral.", 
-        "arc": "Éclipse" }
+        { "name": "Skull Knight",
+        "image": "/images/character/skullknight.jpg",
+        "description": "Un mystérieux chevalier spectral.",
+        "arc": "Éclipse" },
+        {
+          "name": "Isidro",
+          "image": "/images/character/isidro.jpg",
+          "description": "Un jeune garçon courageux et déterminé armé d'une épée.",
+          "arc": "L'Âge Noir"
+        },
+        {
+          "name": "Farnese de Vandimion",
+          "image": "/images/character/farnese.jpg",
+          "description": "Une noble femme qui rejoint Guts dans son combat, mais pour quelles raisons ?",
+          "arc": "L'Âge Noir"
+        },
+        {
+          "name": "Schierke",
+          "image": "/images/character/schierke.jpg",
+          "description": "Une jeune sorcière puissante qui aide Guts dans sa quête.",
+          "arc": "L'Âge Noir"
+        },
+      {
+        "name": "Flora",
+        "image": "/images/character/flora.jpg",
+        "description": "Une puissante sorcière qui vit dans une forêt enchantée. Mentore de Schierke.",
+        "arc": "L'Âge Noir"
+      },
+        {
+          "name": "Puck",
+          "image": "/images/character/puck.jpg",
+          "description": "Un petit elfe mystérieux et loyal, souvent aux côtés de Guts.",
+          "arc": "L’Âge d’Or"
+        },
+        {
+          "name": "Serpico",
+          "image": "/images/character/serpico.jpg",
+          "description": "Le garde du corps loyal et habile de Farnese.",
+          "arc": "L'Âge Noir"
+        }
       ]
 }

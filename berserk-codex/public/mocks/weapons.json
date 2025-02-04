@@ -1,19 +1,34 @@
-{ 
+{
     "weapons" : [
-        { 
-            "name": "Dragon Slayer", 
-            "image": "/images/weapons/dragon-slayer.png", 
-            "description": "Une épée géante utilisée par Guts." 
+        {
+            "name": "Dragon Slayer",
+            "image": "/images/weapons/dragon-slayer.png",
+            "description": "Une épée géante utilisée par Guts."
         },
-        { 
-            "name": "Behelith", 
-            "image": "/images/weapons/behelith.jpg", 
-            "description": "Serez-vous élu de la prophétie ?" 
+        {
+            "name": "Behelith",
+            "image": "/images/weapons/behelith.png",
+            "description": "Serez-vous élu de la prophétie ?"
         },
-        { 
-            "name": "Zodd's Sword", 
-            "image": "/images/weapons/zodd-sword.jpg", 
-            "description": "Une épée impressionnante utilisée par Nosferatu Zodd." 
+        {
+          "name": "Cannon Arm",
+          "image": "/images/weapons/canon.jpg",
+          "description": "Un bras canon utilisé par Guts à la place de son bras manquant."
+        },
+        {
+          "name": "Berserker Armor",
+          "image": "/images/weapons/berserker-armor.jpg",
+          "description": "Une armure si puissante qu'elle vous tuera si vous tentez de l'équiper."
+        },
+        {
+            "name": "Zodd's Sword",
+            "image": "/images/weapons/zodd-sword.jpg",
+            "description": "Une épée impressionnante utilisée par Nosferatu Zodd."
+        },
+        {
+          "name": "?",
+          "image": "/images/weapons/nain.png",
+          "description": "??????????????????????????????"
         }
     ]
 }

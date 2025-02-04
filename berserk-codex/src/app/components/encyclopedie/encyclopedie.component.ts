@@ -14,12 +14,12 @@ import { Character } from '../../types/character';
   styleUrls: ['./encyclopedie.component.scss']
 })
 export class EncyclopediaComponent implements OnInit {
-  public sortOrder: 'A-Z' | 'Z-A' | 'Apparition' = 'A-Z';
-  public arcOrder = ['Prologue','L’Âge d’Or', 'Éclipse'];
-  public characters: Character[] = []
+  private sortOrder: 'A-Z' | 'Z-A' | 'Apparition' = 'A-Z';
+  private arcOrder = ['Prologue','Black Swordsman','L’Âge d’Or', 'Éclipse', 'L\'Âge Noir'];
+  private characters: Character[] = []
 
   constructor(private mockDataService: MockDataService) {}
-  
+
     ngOnInit() {
       this.mockDataService.getCharacter().subscribe((data: { characters: Character[] }) => {
         this.characters = data.characters;

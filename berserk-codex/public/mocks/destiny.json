@@ -1,5 +1,6 @@
 {
     "destinys": [
+<<<<<<< HEAD
         { 
             "image": "/images/choices/choix1.jpg", 
             "option1": "Jour", 
@@ -24,6 +25,32 @@
             "image": "/images/choices/choix5.jpg", 
             "option1": "Courage", 
             "option2": "Folie" 
+=======
+        {
+            "image": "/images/destiny/choix1.jpg",
+            "option1": "Jour",
+            "option2": "Nuit"
+        },
+        {
+            "image": "/images/destiny/choix2.jpg",
+            "option1": "Sauver",
+            "option2": "Laisser"
+        },
+        {
+            "image": "/images/destiny/choix3.jpg",
+            "option1": "Aider",
+            "option2": "Dominer"
+        },
+        {
+            "image": "/images/destiny/choix4.jpg",
+            "option1": "Combattre",
+            "option2": "S'enfuir"
+        },
+        {
+            "image": "/images/destiny/choix5.jpg",
+            "option1": "Courage",
+            "option2": "Folie"
+>>>>>>> fd4e86ceb64b781df21570706779cb6ccb9b4e2d
         }
     ]
 }

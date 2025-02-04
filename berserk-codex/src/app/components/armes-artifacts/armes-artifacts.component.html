@@ -3,7 +3,7 @@
     <button class="carousel-arrow left" (click)="prevWeapon()">&#10094;</button>
 
     <div class="carousel-item">
-      <img ngSrc= "{{ currentWeapon.image }}" alt="{{ currentWeapon.name }}" class="carousel-image" [width]="300" [height]="400"/>
+      <img ngSrc= "{{ currentWeapon.image }}" alt="{{ currentWeapon.name }}" class="carousel-image" [width]="300" [height]="400" *ngIf="currentWeapon?.image"/>
       <div class="description">
         <h2>{{ currentWeapon.name }}</h2>
         <p>{{ currentWeapon.description }}</p>
