@@ -15,7 +15,8 @@ export class MapComponent implements OnInit{
   constructor(private mockDataService: MockDataService) {}
 
   ngOnInit() {
-    this.mockDataService.getMapEvents().subscribe((data: { mapEvents: MapEvent[] }) => {
+    this.mockDataService.getMapEvents().subscribe((
+      data: { mapEvents: MapEvent[] }) => {
       this.events = data.mapEvents;
     });
   }

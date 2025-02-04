@@ -6,6 +6,7 @@ import { ArcFriezeComponent } from './components/arc-frieze/arc-frieze.component
 import {EncyclopediaComponent} from './components/encyclopedie/encyclopedie.component';
 import {ArmesArtifactsComponent} from './components/armes-artifacts/armes-artifacts.component';
 import {DestineeComponent} from './components/destinee/destinee.component';
+import { CharacterNetworkComponent } from './components/character-network/character-network.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -15,5 +16,7 @@ export const routes: Routes = [
   { path: 'armes-artifacts', component: ArmesArtifactsComponent},
   { path:'arc-frieze', component:ArcFriezeComponent},
   { path:'destinee', component:DestineeComponent},
+  { path:'relationships', component:CharacterNetworkComponent},
   { path: '**', component: HomeComponent }
 ];
+  

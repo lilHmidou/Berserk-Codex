@@ -27,4 +27,12 @@ export class MockDataService {
   public getDestiny(): Observable<any>{
     return this.http.get('/mocks/destiny.json')
   }
+  
+  getCharacterRelationships(): Observable<any> {
+    return this.http.get('/mocks/relationships.json');
+  }
+
+  getGroupColors(): Observable<any> {
+    return this.http.get('/mocks/group-colors.json');
+  }
 }

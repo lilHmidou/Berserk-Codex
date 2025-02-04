@@ -1,0 +1,27 @@
+<div class="relationships-page">
+  <div class="network-wrapper">
+    <div #networkContainer class="network-canvas"></div>
+
+    <!-- Légende -->
+    <div class="legend" *ngIf="groups.length > 0">
+      <h3>Relations Clés</h3>
+      <div *ngFor="let group of groups" class="legend-item">
+        <div class="color-box" [style.background]="group.color"></div>
+        <span>{{ group.name }}</span>
+      </div>
+    </div>
+
+    <!-- Tooltip -->
+    <div *ngIf="tooltipVisible" class="bio-tooltip" 
+        [style.left.px]="tooltipPosition.x"
+        [style.top.px]="tooltipPosition.y">
+      {{ tooltipContent }}
+    </div>
+
+    <!-- Chargement -->
+    <div *ngIf="!network" class="loading">
+      <div class="spinner"></div>
+      Chargement des relations...
+    </div>
+  </div>
+</div>
