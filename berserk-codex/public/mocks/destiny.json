@@ -1,0 +1,29 @@
+{
+    "destinys": [
+        { 
+            "image": "/images/choix1.jpg", 
+            "option1": "Jour", 
+            "option2": "Nuit" 
+        },
+        { 
+            "image": "/images/choix2.jpg", 
+            "option1": "Sauver", 
+            "option2": "Laisser" 
+        },
+        { 
+            "image": "/images/choix3.jpg", 
+            "option1": "Aider", 
+            "option2": "Dominer" 
+        },
+        { 
+            "image": "/images/choix4.jpg", 
+            "option1": "Combattre", 
+            "option2": "S'enfuir" 
+        },
+        { 
+            "image": "/images/choix5.jpg", 
+            "option1": "Courage", 
+            "option2": "Folie" 
+        }
+    ]
+}

@@ -12,7 +12,7 @@
     <div class="overlay right" [class.active]="hoveredChoice === 'right'"></div>
   </div>
 
-  <div class="choice-container">
+  <div class="choice-container" *ngIf="choices.length > 0">
     <div
       class="choice left"
       [class.active]="hoveredChoice === 'left'"
@@ -24,7 +24,14 @@
     </div>
 
     <div class="image-container">
-      <img ngSrc="{{ choices[currentChoiceIndex].image }}" alt="Illustration du choix" width="200" height="600" class="choice-image">
+      <img 
+        *ngIf="choices[currentChoiceIndex]?.image"
+        ngSrc="{{ choices[currentChoiceIndex].image }}" 
+        alt="Illustration du choix" 
+        width="200" 
+        height="600" 
+        class="choice-image"
+      >
     </div>
 
     <div
@@ -42,3 +49,4 @@
     <h2>Votre destinée : {{ finalDestiny }}</h2>
   </div>
 </div>
+
