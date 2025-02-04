@@ -1,0 +1,44 @@
+<div class="particles-container">
+  <div *ngFor="let particle of particles" class="particle" [ngStyle]="{'left': particle.x + 'px', 'top': particle.y + 'px'}"></div>
+</div>
+
+<div class="destinee-container">
+  <div class="title-container">
+    <h1>Choisissez votre destinée</h1>
+  </div>
+
+  <div class="overlay-container">
+    <div class="overlay left" [class.active]="hoveredChoice === 'left'"></div>
+    <div class="overlay right" [class.active]="hoveredChoice === 'right'"></div>
+  </div>
+
+  <div class="choice-container">
+    <div
+      class="choice left"
+      [class.active]="hoveredChoice === 'left'"
+      (mouseover)="setHover('left')"
+      (mouseleave)="setHover('')"
+      (click)="makeChoice('left')"
+    >
+      <p>{{ choices[currentChoiceIndex].option1 }}</p>
+    </div>
+
+    <div class="image-container">
+      <img ngSrc="{{ choices[currentChoiceIndex].image }}" alt="Illustration du choix" width="200" height="600" class="choice-image">
+    </div>
+
+    <div
+      class="choice right"
+      [class.active]="hoveredChoice === 'right'"
+      (mouseover)="setHover('right')"
+      (mouseleave)="setHover('')"
+      (click)="makeChoice('right')"
+    >
+      <p>{{ choices[currentChoiceIndex].option2 }}</p>
+    </div>
+  </div>
+
+  <div *ngIf="finalDestiny" class="result">
+    <h2>Votre destinée : {{ finalDestiny }}</h2>
+  </div>
+</div>
