@@ -1,6 +1,8 @@
 import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { NgForOf, NgIf, NgOptimizedImage, NgStyle } from '@angular/common';
+import { Destiny } from '../../types/destiny';
+import { MockDataService } from '../../services/mock-data.service';
 
 @Component({
   selector: 'app-destinee',
@@ -15,28 +17,25 @@ import { NgForOf, NgIf, NgOptimizedImage, NgStyle } from '@angular/common';
   styleUrls: ['./destinee.component.scss']
 })
 export class DestineeComponent implements OnInit {
-  choices = [
-    { image: '/images/choix1.jpg', option1: 'Jour', option2: 'Nuit' },
-    { image: '/images/choix2.jpg', option1: 'Sauver', option2: 'Laisser' },
-    { image: '/images/choix3.jpg', option1: 'Aider', option2: 'Dominer' },
-    { image: '/images/choix4.jpg', option1: 'Combattre', option2: "S'enfuir" },
-    { image: '/images/choix5.jpg', option1: 'Courage', option2: 'Folie' },
-  ];
+  public choices: Destiny [] = [] ; 
 
-  currentChoiceIndex = 0;
-  path: string[] = [];
-  finalDestiny: string | null = null;
-  hoveredChoice: 'left' | 'right' | '' = '';
+  public currentChoiceIndex = 0;
+  public path: string[] = [];
+  public finalDestiny: string | null = null;
+  public hoveredChoice: 'left' | 'right' | '' = '';
 
-  particles: { x: number; y: number }[] = [];
+  public particles: { x: number; y: number }[] = [];
 
-  constructor(@Inject(PLATFORM_ID) private platformId: object) {}
+  constructor(@Inject(PLATFORM_ID) private platformId: object, private mockDataService: MockDataService) {}
 
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
       // Générer les particules uniquement côté client
       this.generateParticles();
     }
+    this.mockDataService.getDestiny().subscribe((data: {destinys: Destiny[]}) => {
+      this.choices = data.destinys ;
+    })
   }
 
   generateParticles(): void {

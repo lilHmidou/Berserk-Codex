@@ -23,4 +23,8 @@ export class MockDataService {
   public getWeapons(): Observable<any> {
     return this.http.get('/mocks/weapons.json')
   }
+
+  public getDestiny(): Observable<any>{
+    return this.http.get('/mocks/destiny.json')
+  }
 }
