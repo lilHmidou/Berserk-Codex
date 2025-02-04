@@ -8,10 +8,12 @@ import {ArmesArtifactsComponent} from './components/armes-artifacts/armes-artifa
 import {DestineeComponent} from './components/destinee/destinee.component';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
   { path: 'map', component: MapComponent},
   { path: 'encyclopedie', component: EncyclopediaComponent},
   { path: 'armes-artifacts', component: ArmesArtifactsComponent},
   { path:'arc-frieze', component:ArcFriezeComponent},
-  { path:'destinee', component:DestineeComponent}
+  { path:'destinee', component:DestineeComponent},
+  { path: '**', component: HomeComponent }
 ];

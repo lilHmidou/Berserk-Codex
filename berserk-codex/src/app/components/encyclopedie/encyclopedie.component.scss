@@ -4,6 +4,7 @@
   padding: 8rem 2rem 2rem; /* Ajoute un padding-top pour éviter que le contenu soit caché sous la navbar */
   background-image: url('/images/character/bkencycl.jpg'); /* Définir l'image de fond */
   background-size: cover; /* Pour couvrir toute la surface */
+  background-attachment: fixed;
   background-color: #121212;
   background-position: center; /* Centrer l'image */
   color: #fff;
