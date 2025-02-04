@@ -1,24 +1,230 @@
 {
-    "nodes": [
-      {
-        "id": 1,
-        "label": "Guts",
-        "image": "assets/characters/guts.webp",
-        "bio": "Le Épéiste Noir...",
-        "group": "Bande du Faucon"
-      },
-      {
-        "id": 2,
-        "label": "Griffith",
-        "group": "Nouvelle Bande du Faucon"
-      }
-    ],
-    "edges": [
-      {
-        "from": 1,
-        "to": 2,
-        "label": "Rivalité/Fraternité",
-        "color": "#8b0000"
-      }
-    ]
-  }
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Guts",
+      "image": "/characters/guts.webp",
+      "bio": "Le Épéiste Noir, ancien commandant de la Bande du Faucon, en quête de vengeance.",
+      "group": "Bande du Faucon"
+    },
+    {
+      "id": 2,
+      "label": "Griffith",
+      "image": "/characters/griffith.webp",
+      "bio": "Leader charismatique de la Bande du Faucon, devenu le faucon suprême Femto.",
+      "group": "Nouvelle Bande du Faucon"
+    },
+    {
+      "id": 3,
+      "label": "Casca",
+      "image": "/characters/casca.webp",
+      "bio": "Ancienne commandante de la Bande du Faucon, loyale à Griffith, puis traumatisée par l'Éclipse.",
+      "group": "Bande du Faucon"
+    },
+    {
+      "id": 4,
+      "label": "Skull Knight",
+      "image": "/characters/skullknight.webp",
+      "bio": "Guerrier mystérieux opposé aux God Hand, guide de Guts.",
+      "group": "Indépendant"
+    },
+    {
+      "id": 5,
+      "label": "Zodd",
+      "image": "/characters/zodd.webp",
+      "bio": "Guerrier démoniaque immortel, fidèle à Griffith et adversaire récurrent de Guts.",
+      "group": "Nouvelle Bande du Faucon"
+    },
+    {
+      "id": 6,
+      "label": "Farnese",
+      "image": "/characters/farnese.webp",
+      "bio": "Ancienne inquisitrice, devenue disciple de Schierke et alliée de Guts.",
+      "group": "Groupe de Guts"
+    },
+    {
+      "id": 7,
+      "label": "Serpico",
+      "image": "/characters/serpico.webp",
+      "bio": "Serviteur et protecteur de Farnese, bretteur agile et intelligent.",
+      "group": "Groupe de Guts"
+    },
+    {
+      "id": 8,
+      "label": "Schierke",
+      "image": "/characters/schierke.webp",
+      "bio": "Jeune sorcière, disciple de Flora, aide Guts à maîtriser son armure Berserker.",
+      "group": "Groupe de Guts"
+    },
+    {
+      "id": 9,
+      "label": "Femto",
+      "image": "/characters/femto.webp",
+      "bio": "Forme démoniaque de Griffith après l'Éclipse, membre des God Hand.",
+      "group": "God Hand"
+    },
+    {
+      "id": 10,
+      "label": "Void",
+      "image": "/characters/void.webp",
+      "bio": "Chef des God Hand, manipulateur du destin et orchestrateur de l'Éclipse.",
+      "group": "God Hand"
+    },
+    {
+      "id": 11,
+      "label": "Isidro",
+      "image": "/characters/isidro.webp",
+      "bio": "Jeune voleur rêvant de devenir un grand épéiste, compagnon de Guts.",
+      "group": "Groupe de Guts"
+    },
+    {
+      "id": 12,
+      "label": "Puck",
+      "image": "/characters/puck.webp",
+      "bio": "Petit elfe malicieux, fidèle compagnon de Guts.",
+      "group": "Groupe de Guts"
+    },
+    {
+      "id": 13,
+      "label": "Rickert",
+      "image": "/characters/rickert.webp",
+      "bio": "Ancien membre de la Bande du Faucon, refusant de suivre Griffith après l'Éclipse.",
+      "group": "Indépendant"
+    },
+    {
+      "id": 14,
+      "label": "Flora",
+      "image": "/characters/flora.webp",
+      "bio": "Puissante sorcière et mentor de Schierke, ennemie des forces démoniaques.",
+      "group": "Indépendant"
+    },
+    {
+      "id": 15,
+      "label": "Mozgus",
+      "image": "/characters/mozgus.webp",
+      "bio": "Inquisiteur fanatique, transformé en apôtre par Griffith.",
+      "group": "Nouvelle Bande du Faucon"
+    },
+    {
+      "id": 16,
+      "label": "Slan",
+      "image": "/characters/slan.webp",
+      "bio": "Membre des God Hand, incarnation de la luxure et du chaos.",
+      "group": "God Hand"
+    },
+    {
+      "id": 17,
+      "label": "Ubik",
+      "image": "/characters/ubik.webp",
+      "bio": "Membre des God Hand, manipulateur des illusions et de la perception.",
+      "group": "God Hand"
+    },
+    {
+      "id": 18,
+      "label": "Conrad",
+      "image": "/characters/conrad.webp",
+      "bio": "Membre des God Hand, créateur de pestes et fléaux.",
+      "group": "God Hand"
+    }
+  ],
+  "edges": [
+    {
+      "from": 1,
+      "to": 2,
+      "label": "Rivalité/Fraternité",
+      "color": "#8b0000",
+      "length": 300
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "Amour/Protection",
+      "color": "#ff4500",
+      "length": 250
+    },
+    {
+      "from": 3,
+      "to": 2,
+      "label": "Fidélité passée",
+      "color": "#8b0000",
+      "length": 250
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "label": "Mentor/Mystérieux allié",
+      "color": "#4b0082",
+      "length": 350
+    },
+    {
+      "from": 1,
+      "to": 5,
+      "label": "Ennemis mortels",
+      "color": "#8b0000",
+      "length": 280
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "label": "Lien fraternel",
+      "color": "#006400",
+      "length": 200
+    },
+    {
+      "from": 6,
+      "to": 8,
+      "label": "Maître et disciple",
+      "color": "#483d8b",
+      "length": 250
+    },
+    {
+      "from": 1,
+      "to": 8,
+      "label": "Alliés et protecteur",
+      "color": "#483d8b",
+      "length": 280
+    },
+    {
+      "from": 2,
+      "to": 9,
+      "label": "Évolution démoniaque",
+      "color": "#8b0000",
+      "length": 300
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "label": "Membre des God Hand",
+      "color": "#8b0000",
+      "length": 350
+    },
+    {
+      "from": 5,
+      "to": 2,
+      "label": "Fidélité absolue",
+      "color": "#8b0000",
+      "length": 260
+    },
+    {
+      "from": 1,
+      "to": 11,
+      "label": "Maître et disciple",
+      "color": "#ffa500",
+      "length": 270
+    },
+    {
+      "from": 1,
+      "to": 12,
+      "label": "Amitié improbable",
+      "color": "#00ced1",
+      "length": 220
+    },
+    {
+      "from": 13,
+      "to": 2,
+      "label": "Trahison et rejet",
+      "color": "#8b0000",
+      "length": 280
+    }
+  ]
+}

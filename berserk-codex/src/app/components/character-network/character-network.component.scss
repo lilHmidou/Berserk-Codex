@@ -1,50 +1,75 @@
+/* Conteneur principal */
 .network-wrapper {
   position: relative;
   background: #0a0a0a;
   border: 2px solid #8b0000;
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 20px;
   margin: 2rem auto;
   max-width: 1200px;
   min-height: 700px;
+  box-shadow: 0 0 15px rgba(139, 0, 0, 0.4);
 }
 
+/* Zone du graphe */
 .network-canvas {
   width: 100%;
   height: 700px;
+  border-radius: 8px;
 }
 
+/* Légende */
 .legend {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  background: rgba(10, 10, 10, 0.95);
+  background: rgba(15, 15, 15, 0.95);
   padding: 1rem;
   border: 1px solid #8b0000;
-  border-radius: 6px;
+  border-radius: 8px;
   z-index: 1000;
-
-  h3 {
-    color: #8b0000;
-    margin-bottom: 0.8rem;
-    font-family: 'Cinzel', serif;
-  }
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(5px);
 }
 
+.legend:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(139, 0, 0, 0.5);
+}
+
+.legend h3 {
+  color: #ff4500;
+  margin-bottom: 0.8rem;
+  font-family: 'Cinzel', serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* Élément de légende */
 .legend-item {
   display: flex;
   align-items: center;
   gap: 0.8rem;
   margin: 0.5rem 0;
   color: #ddd;
-
-  .color-box {
-    width: 20px;
-    height: 20px;
-    border: 1px solid #444;
-  }
+  font-size: 0.9rem;
 }
 
+.legend-item .color-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #444;
+  transition: transform 0.2s ease-in-out;
+}
+
+.legend-item:hover .color-box {
+  transform: scale(1.2);
+}
+
+/* Tooltip */
 .bio-tooltip {
   position: absolute;
   background: rgba(10, 10, 10, 0.95);
@@ -55,9 +80,24 @@
   pointer-events: none;
   z-index: 1001;
   max-width: 300px;
-  transform: translate(-50%, -100%);
+  transform: translate(15px, -15px); /* Décalage léger */
 }
 
+
+
+/* Effet d'apparition du tooltip */
+.bio-tooltip::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 8px;
+  border-style: solid;
+  border-color: #8b0000 transparent transparent transparent;
+}
+
+/* Chargement */
 .loading {
   position: absolute;
   top: 50%;
@@ -66,18 +106,32 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  color: #8b0000;
+  color: #ff4500;
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+}
 
-  .spinner {
-    width: 24px;
-    height: 24px;
-    border: 3px solid rgba(139, 0, 0, 0.3);
-    border-top-color: #8b0000;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-  }
+/* Animation du spinner */
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid rgba(139, 0, 0, 0.3);
+  border-top-color: #ff4500;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
   to { transform: rotate(360deg); }
+}
+
+/* Effet pulsation pour une meilleure visibilité */
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.loading .spinner {
+  animation: spin 1s linear infinite, pulse 1.5s ease-in-out infinite;
 }

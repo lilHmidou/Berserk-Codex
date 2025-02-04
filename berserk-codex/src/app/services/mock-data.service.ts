@@ -19,4 +19,8 @@ export class MockDataService {
   getCharacterRelationships(): Observable<any> {
     return this.http.get('/mocks/relationships.json');
   }
+
+  getGroupColors(): Observable<any> {
+    return this.http.get('/mocks/group-colors.json');
+  }
 }
