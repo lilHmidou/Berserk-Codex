@@ -15,4 +15,12 @@ export class MockDataService {
   public getStoryArcs(): Observable<any> {
     return this.http.get('/mocks/story-arcs.json');
   }
+
+  public getCharacter(): Observable<any> {
+    return this.http.get('/mocks/character.json')
+  }
+
+  public getWeapons(): Observable<any> {
+    return this.http.get('/mocks/weapons.json')
+  }
 }

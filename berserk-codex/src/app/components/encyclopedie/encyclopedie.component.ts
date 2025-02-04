@@ -1,12 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {NgForOf, NgOptimizedImage} from '@angular/common';
-
-interface Character {
-  name: string;
-  image: string;
-  description: string;
-  arc: string;
-}
+import { MockDataService } from '../../services/mock-data.service';
+import { Character } from '../../types/character';
 
 @Component({
   standalone: true,
@@ -18,18 +13,18 @@ interface Character {
   ],
   styleUrls: ['./encyclopedie.component.scss']
 })
-export class EncyclopediaComponent {
-  sortOrder: 'A-Z' | 'Z-A' | 'Apparition' = 'A-Z';
+export class EncyclopediaComponent implements OnInit {
+  public sortOrder: 'A-Z' | 'Z-A' | 'Apparition' = 'A-Z';
+  public arcOrder = ['Prologue','L’Âge d’Or', 'Éclipse'];
+  public characters: Character[] = []
 
-  characters: Character[] = [
-    { name: 'Guts', image: '/images/guts.jpg', description: 'Le guerrier maudit et porteur du Dragon Slayer.', arc: 'Prologue' },
-    { name: 'Griffith', image: '/images/griffith.jpg', description: 'Leader charismatique de la Bande du Faucon.', arc: 'L’Âge d’Or' },
-    { name: 'Casca', image: '/images/casca.jpg', description: 'Brillante stratège et guerrière.', arc: 'L’Âge d’Or' },
-    { name: 'Zodd', image: '/images/zodd.jpg', description: 'Démon immortel surnommé "Nosferatu".', arc: 'L’Âge d’Or' },
-    { name: 'Skull Knight', image: '/images/skullknight.jpg', description: 'Un mystérieux chevalier spectral.', arc: 'Éclipse' },
-  ];
-
-  arcOrder = ['Prologue','L’Âge d’Or', 'Éclipse']; // Ordre des arcs narratifs
+  constructor(private mockDataService: MockDataService) {}
+  
+    ngOnInit() {
+      this.mockDataService.getCharacter().subscribe((data: { characters: Character[] }) => {
+        this.characters = data.characters;
+      });
+    }
 
   get sortedCharacters(): Character[] {
     return [...this.characters].sort((a, b) => {

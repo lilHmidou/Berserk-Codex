@@ -1,11 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {NgOptimizedImage} from '@angular/common';
+import { MockDataService } from '../../services/mock-data.service';
+import { Weapons } from '../../types/weapons';
 
-interface Weapon {
-  name: string;
-  image: string;
-  description: string;
-}
 
 @Component({
   selector: 'app-armes-artifacts',
@@ -16,29 +13,32 @@ interface Weapon {
   standalone: true,
   styleUrls: ['./armes-artifacts.component.scss']
 })
-export class ArmesArtifactsComponent {
-  weapons: Weapon[] = [
-    { name: 'Dragon Slayer', image: '/images/dragon-slayer.png', description: 'Une épée géante utilisée par Guts.' },
-    { name: 'Behelith', image: '/images/behelith.jpg', description: 'Serez-vous élu de la prophétie ?' },
-    { name: 'Zodd\'s Sword', image: '/images/zodd-sword.jpg', description: 'Une épée impressionnante utilisée par Nosferatu Zodd.' },
-  ];
+export class ArmesArtifactsComponent implements OnInit {
+  public weaponsAndArt: Weapons[] = [];
+  public currentIndex: number = 0;
 
-  currentIndex: number = 0;
+  constructor(private mockDataService : MockDataService){}
 
-  get currentWeapon(): Weapon {
-    return this.weapons[this.currentIndex];
+  ngOnInit(): void {
+      this.mockDataService.getWeapons().subscribe((data: { weapons: Weapons[] }) => {
+        this.weaponsAndArt = data.weapons;
+    });
   }
 
-  prevWeapon(): void {
+  public get currentWeapon(): Weapons {
+    return this.weaponsAndArt[this.currentIndex];
+  }
+
+  public prevWeapon(): void {
     if (this.currentIndex > 0) {
       this.currentIndex--;
     } else {
-      this.currentIndex = this.weapons.length - 1; // Retourne à la dernière arme
+      this.currentIndex = this.weaponsAndArt.length - 1; // Retourne à la dernière arme
     }
   }
 
-  nextWeapon(): void {
-    if (this.currentIndex < this.weapons.length - 1) {
+  public nextWeapon(): void {
+    if (this.currentIndex < this.weaponsAndArt.length - 1) {
       this.currentIndex++;
     } else {
       this.currentIndex = 0; // Retourne à la première arme

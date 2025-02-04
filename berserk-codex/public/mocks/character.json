@@ -1,0 +1,24 @@
+{
+    "characters": [
+        { "name": "Guts", 
+        "image": "/images/character/guts.jpg", 
+        "description": "Le guerrier maudit et porteur du Dragon Slayer.", 
+        "arc": "Prologue" },
+        { "name": "Griffith", 
+        "image": "/images/character/griffith.jpg", 
+        "description": "Leader charismatique de la Bande du Faucon.", 
+        "arc": "L’Âge d’Or" },
+        { "name": "Casca", 
+        "image": "/images/character/casca.jpg", 
+        "description": "Brillante stratège et guerrière.", 
+        "arc": "L’Âge d’Or" },
+        { "name": "Zodd", 
+        "image": "/images/character/zodd.jpg", 
+        "description": "Démon immortel surnommé 'Nosferatu'.", 
+        "arc": "L’Âge d’Or" },
+        { "name": "Skull Knight", 
+        "image": "/images/character/skullknight.jpg", 
+        "description": "Un mystérieux chevalier spectral.", 
+        "arc": "Éclipse" }
+      ]
+}
