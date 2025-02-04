@@ -38,84 +38,84 @@
     {
       "id": 6,
       "label": "Farnese",
-      "image": "/characters/farnese.webp",
+      "image": "/images/character/farnese.jpg",
       "bio": "Ancienne inquisitrice, devenue disciple de Schierke et alliée de Guts.",
       "group": "Groupe de Guts"
     },
     {
       "id": 7,
       "label": "Serpico",
-      "image": "/characters/serpico.webp",
+      "image": "/images/character/serpico.jpg",
       "bio": "Serviteur et protecteur de Farnese, bretteur agile et intelligent.",
       "group": "Groupe de Guts"
     },
     {
       "id": 8,
       "label": "Schierke",
-      "image": "/characters/schierke.webp",
+      "image": "/images/character/schierke.jpg",
       "bio": "Jeune sorcière, disciple de Flora, aide Guts à maîtriser son armure Berserker.",
       "group": "Groupe de Guts"
     },
     {
       "id": 9,
       "label": "Femto",
-      "image": "/characters/femto.webp",
+      "image": "/images/character/femto.jpg",
       "bio": "Forme démoniaque de Griffith après l'Éclipse, membre des God Hand.",
       "group": "God Hand"
     },
     {
       "id": 10,
       "label": "Void",
-      "image": "/characters/void.webp",
+      "image": "/images/character/void.jpg",
       "bio": "Chef des God Hand, manipulateur du destin et orchestrateur de l'Éclipse.",
       "group": "God Hand"
     },
     {
       "id": 11,
       "label": "Isidro",
-      "image": "/characters/isidro.webp",
+      "image": "/images/character/isidro.jpg",
       "bio": "Jeune voleur rêvant de devenir un grand épéiste, compagnon de Guts.",
       "group": "Groupe de Guts"
     },
     {
       "id": 12,
       "label": "Puck",
-      "image": "/characters/puck.webp",
+      "image": "/images/character/puck.jpg",
       "bio": "Petit elfe malicieux, fidèle compagnon de Guts.",
       "group": "Groupe de Guts"
     },
     {
       "id": 13,
       "label": "Rickert",
-      "image": "/characters/rickert.webp",
+      "image": "/images/character/rickert.jpg",
       "bio": "Ancien membre de la Bande du Faucon, refusant de suivre Griffith après l'Éclipse.",
       "group": "Indépendant"
     },
     {
       "id": 14,
       "label": "Flora",
-      "image": "/characters/flora.webp",
+      "image": "/images/character/flora.jpg",
       "bio": "Puissante sorcière et mentor de Schierke, ennemie des forces démoniaques.",
       "group": "Indépendant"
     },
     {
       "id": 16,
       "label": "Slan",
-      "image": "/characters/slan.webp",
+      "image": "/images/character/slan.jpg",
       "bio": "Membre des God Hand, incarnation de la luxure et du chaos.",
       "group": "God Hand"
     },
     {
       "id": 17,
       "label": "Ubik",
-      "image": "/characters/ubik.webp",
+      "image": "/images/character/ubik.jpg",
       "bio": "Membre des God Hand, manipulateur des illusions et de la perception.",
       "group": "God Hand"
     },
     {
       "id": 18,
       "label": "Conrad",
-      "image": "/characters/conrad.webp",
+      "image": "/images/character/conrad.jpg",
       "bio": "Membre des God Hand, créateur de pestes et fléaux.",
       "group": "God Hand"
     }
