@@ -17,25 +17,22 @@ import { MockDataService } from '../../services/mock-data.service';
   styleUrls: ['./destinee.component.scss']
 })
 export class DestineeComponent implements OnInit {
-  public choices: Destiny [] = [] ; 
-
+  public choices: Destiny[] = [];
   public currentChoiceIndex = 0;
   public path: string[] = [];
   public finalDestiny: string | null = null;
   public hoveredChoice: 'left' | 'right' | '' = '';
-
   public particles: { x: number; y: number }[] = [];
 
   constructor(@Inject(PLATFORM_ID) private platformId: object, private mockDataService: MockDataService) {}
 
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
-      // Générer les particules uniquement côté client
       this.generateParticles();
     }
-    this.mockDataService.getDestiny().subscribe((data: {destinys: Destiny[]}) => {
-      this.choices = data.destinys ;
-    })
+    this.mockDataService.getDestiny().subscribe((data: { destinys: Destiny[] }) => {
+      this.choices = data.destinys;
+    });
   }
 
   generateParticles(): void {
@@ -45,9 +42,8 @@ export class DestineeComponent implements OnInit {
     }));
   }
 
-  makeChoice(choice: 'left' | 'right') {
+  makeChoice(choice: 'left' | 'right'): void {
     this.path.push(choice);
-
     if (this.currentChoiceIndex < this.choices.length - 1) {
       this.currentChoiceIndex++;
     } else {
@@ -55,21 +51,23 @@ export class DestineeComponent implements OnInit {
     }
   }
 
-  determineDestiny() {
+  determineDestiny(): void {
     const pathString = this.path.join('-');
 
     if (pathString.includes('left-left-left')) {
-      this.finalDestiny = 'Sacrifice';
+      this.finalDestiny = 'Sacrifice'; 
     } else if (pathString.includes('right-right-right')) {
-      this.finalDestiny = 'God Hand';
+      this.finalDestiny = 'God Hand'; 
     } else if (pathString.includes('left-right-left')) {
-      this.finalDestiny = 'Apôtre';
+      this.finalDestiny = 'Apôtre'; 
+    } else if (pathString.includes('right-left-right')) {
+      this.finalDestiny = 'Compagnon de Guts'; 
     } else {
-      this.finalDestiny = 'Paysan';
+      this.finalDestiny = 'Paysan'; 
     }
   }
 
-  setHover(choice: 'left' | 'right' | '') {
+  setHover(choice: 'left' | 'right' | ''): void {
     this.hoveredChoice = choice;
   }
 }

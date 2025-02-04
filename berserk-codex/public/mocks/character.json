@@ -85,6 +85,12 @@
           "image": "/images/character/serpico.jpg",
           "description": "Le garde du corps loyal et habile de Farnese.",
           "arc": "L'Âge Noir"
+        },
+        {
+          "name": "Rickert",
+          "image": "/images/character/rickert.jpg",
+          "description": "Un membre de la Bande du Faucon qui a survécu à l'Éclipse. Ami de Guts et Casca.",
+          "arc": "L’Âge d’Or"
         }
       ]
 }
