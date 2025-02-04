@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {NgOptimizedImage} from '@angular/common';
+import {NgIf, NgOptimizedImage} from '@angular/common';
 import { MockDataService } from '../../services/mock-data.service';
 import { Weapons } from '../../types/weapons';
 
@@ -8,7 +8,8 @@ import { Weapons } from '../../types/weapons';
   selector: 'app-armes-artifacts',
   templateUrl: './armes-artifacts.component.html',
   imports: [
-    NgOptimizedImage
+    NgOptimizedImage,
+    NgIf
   ],
   standalone: true,
   styleUrls: ['./armes-artifacts.component.scss']

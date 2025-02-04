@@ -1,4 +1,4 @@
-//Variable utilisé dans l'ensemble du style : 
+//Variable utilisé dans l'ensemble du style :
 // Couleurs
 $berserk-red: #a20505;
 $dark-bg: #111111;
@@ -23,6 +23,7 @@ $mobile-breakpoint: 768px;
   font-family: $cinzel-font;
   text-align: center;
   font-size: 2.8rem;
+  margin-top: 2rem;
   margin-bottom: 4rem;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -76,7 +77,7 @@ $mobile-breakpoint: 768px;
       background: $gold-accent;
       transform: scale(1.2);
     }
-    
+
     .timeline-content h3 {
       color: $gold-accent;
     }
@@ -87,7 +88,7 @@ $mobile-breakpoint: 768px;
       background: $gold-accent;
       box-shadow: 0 0 25px rgba(139, 0, 0, 0.8);
     }
-    
+
     .timeline-content {
       opacity: 1;
     }
@@ -263,7 +264,7 @@ $mobile-breakpoint: 768px;
 @media (max-width: 1200px) {
   .arc-header {
     grid-template-columns: 1fr;
-    
+
     .cover-image {
       height: 400px;
     }
@@ -305,7 +306,7 @@ $mobile-breakpoint: 768px;
   .navigation-buttons {
     flex-direction: column;
     gap: 1rem;
-    
+
     button {
       width: 100%;
     }
