@@ -92,35 +92,35 @@
           "description": "Un membre de la Bande du Faucon qui a survécu à l'Éclipse. Ami de Guts et Casca.",
           "arc": "L’Âge d’Or"
         },
-      {
-        "name": "Judeau",
-        "image": "/images/character/judeau.jpg",
-        "description": "Un habile escrimeur et membre de la Bande du Faucon, connu pour son esprit vif et son humour.",
-        "arc": "L'Âge d'Or"
-      },
-      {
-        "name": "Corkus",
-        "image": "/images/character/corkus.jpg",
-        "description": "Un membre de la Bande du Faucon, souvent franc et direct dans ses opinions.",
-        "arc": "L'Âge d'Or"
-      },
-      {
-        "name": "Pippin",
-        "image": "/images/character/pippin.jpg",
-        "description": "Un colosse silencieux mais protecteur, membre de la Bande du Faucon.",
-        "arc": "L'Âge d'Or"
-      },
-      {
-        "name": "Gaston",
-        "image": "/images/character/gaston.jpg",
-        "description": "Un membre de la Bande du Faucon qui aspire à une vie paisible.",
-        "arc": "L'Âge d'Or"
-      },
-      {
-        "name": "Mozgus",
-        "image": "/images/character/mozgus.jpg",
-        "description": "Un inquisiteur cruel et fanatique, connu pour ses méthodes brutales.",
-        "arc": "Black Swordsman"
-      }
+        {
+          "name": "Judeau",
+          "image": "/images/character/judeau.jpg",
+          "description": "Un habile escrimeur et membre de la Bande du Faucon, connu pour son esprit vif et son humour.",
+          "arc": "L'Âge d'Or"
+        },
+        {
+          "name": "Corkus",
+          "image": "/images/character/corkus.jpg",
+          "description": "Un membre de la Bande du Faucon, souvent franc et direct dans ses opinions.",
+          "arc": "L'Âge d'Or"
+        },
+        {
+          "name": "Pippin",
+          "image": "/images/character/pippin.jpg",
+          "description": "Un colosse silencieux mais protecteur, membre de la Bande du Faucon.",
+          "arc": "L'Âge d'Or"
+        },
+        {
+          "name": "Gaston",
+          "image": "/images/character/gaston.jpg",
+          "description": "Un membre de la Bande du Faucon qui aspire à une vie paisible.",
+          "arc": "L'Âge d'Or"
+        },
+        {
+          "name": "Mozgus",
+          "image": "/images/character/mozgus.jpg",
+          "description": "Un inquisiteur cruel et fanatique, connu pour ses méthodes brutales.",
+          "arc": "Black Swordsman"
+        }
       ]
 }

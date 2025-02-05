@@ -118,6 +118,41 @@
       "image": "/images/character/conrad.jpg",
       "bio": "Membre des God Hand, créateur de pestes et fléaux.",
       "group": "God Hand"
+    },
+    {
+      "id": 19,
+      "label": "Judeau",
+      "image": "/images/character/judeau.jpg",
+      "bio": "Un habile escrimeur et membre de la Bande du Faucon, connu pour son esprit vif et son humour.",
+      "group": "L'Âge d'Or"
+    },
+    {
+      "id": 20,
+      "label": "Corkus",
+      "image": "/images/character/corkus.jpg",
+      "bio": "Un membre de la Bande du Faucon, souvent franc et direct dans ses opinions.",
+      "group": "L'Âge d'Or"
+    },
+    {
+      "id": 21,
+      "label": "Pippin",
+      "image": "/images/character/pippin.jpg",
+      "bio": "Un colosse silencieux mais protecteur, membre de la Bande du Faucon.",
+      "group": "L'Âge d'Or"
+    },
+    {
+      "id": 22,
+      "label": "Gaston",
+      "image": "/images/character/gaston.jpg",
+      "bio": "Un membre de la Bande du Faucon qui aspire à une vie paisible.",
+      "group": "L'Âge d'Or"
+    },
+    {
+      "id": 23,
+      "label": "Mozgus",
+      "image": "/images/character/mozgus.jpg",
+      "bio": "Un inquisiteur cruel et fanatique, connu pour ses méthodes brutales.",
+      "group": "Black Swordsman"
     }
   ],
   "edges": [
@@ -126,42 +161,42 @@
       "to": 2,
       "label": "Rivalité/Fraternité",
       "color": "#8b0000",
-      "length": 300
+      "length": 400
     },
     {
       "from": 1,
       "to": 3,
       "label": "Amour/Protection",
       "color": "#ff4500",
-      "length": 250
+      "length": 400
     },
     {
       "from": 3,
       "to": 2,
       "label": "Fidélité passée",
       "color": "#8b0000",
-      "length": 250
+      "length": 400
     },
     {
       "from": 1,
       "to": 4,
       "label": "Mentor/Mystérieux allié",
       "color": "#4b0082",
-      "length": 350
+      "length": 400
     },
     {
       "from": 1,
       "to": 5,
       "label": "Ennemis mortels",
       "color": "#8b0000",
-      "length": 280
+      "length": 400
     },
     {
       "from": 6,
       "to": 7,
       "label": "Lien fraternel",
       "color": "#006400",
-      "length": 200
+      "length": 300
     },
     {
       "from": 6,
@@ -189,7 +224,7 @@
       "to": 9,
       "label": "Évolution démoniaque",
       "color": "#8b0000",
-      "length": 300
+      "length": 400
     },
     {
       "from": 9,
@@ -224,28 +259,91 @@
       "to": 2,
       "label": "Fidélité absolue",
       "color": "#8b0000",
-      "length": 260
+      "length": 350
     },
     {
       "from": 1,
       "to": 11,
       "label": "Maître et disciple",
       "color": "#ffa500",
-      "length": 270
+      "length": 340
     },
     {
       "from": 1,
       "to": 12,
       "label": "Amitié improbable",
       "color": "#00ced1",
-      "length": 220
+      "length": 320
     },
     {
       "from": 13,
       "to": 2,
       "label": "Trahison et rejet",
       "color": "#8b0000",
-      "length": 280
+      "length": 320
+    },
+    {
+      "from": 1,
+      "to": 19,
+      "label": "Camaraderie",
+      "color": "#008000",
+      "length": 400
+    },
+    {
+      "from": 1,
+      "to": 20,
+      "label": "Rivalité amicale",
+      "color": "#ffa500",
+      "length": 400
+    },
+    {
+      "from": 1,
+      "to": 21,
+      "label": "Respect mutuel",
+      "color": "#008000",
+      "length": 400
+    },
+    {
+      "from": 1,
+      "to": 22,
+      "label": "Ancien camarade",
+      "color": "#4682b4",
+      "length": 400
+    },
+    {
+      "from": 2,
+      "to": 19,
+      "label": "Loyalisme",
+      "color": "#8b0000",
+      "length": 400
+    },
+    {
+      "from": 2,
+      "to": 20,
+      "label": "Loyalisme",
+      "color": "#8b0000",
+      "length": 400
+    },
+    {
+      "from": 2,
+      "to": 21,
+      "label": "Loyalisme",
+      "color": "#8b0000",
+      "length": 400
+    },
+    {
+      "from": 2,
+      "to": 22,
+      "label": "Loyalisme",
+      "color": "#8b0000",
+      "length": 400
+    },
+    {
+      "from": 23,
+      "to": 10,
+      "label": "Apôtre de la foi",
+      "color": "#8b0000",
+      "length": 400
     }
   ]
 }
