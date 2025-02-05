@@ -89,7 +89,7 @@
       "label": "Rickert",
       "image": "/images/character/rickert.jpg",
       "bio": "Ancien membre de la Bande du Faucon, refusant de suivre Griffith après l'Éclipse.",
-      "group": "Indépendant"
+      "group": "Bande du Faucon"
     },
     {
       "id": 14,
@@ -124,35 +124,35 @@
       "label": "Judeau",
       "image": "/images/character/judeau.jpg",
       "bio": "Un habile escrimeur et membre de la Bande du Faucon, connu pour son esprit vif et son humour.",
-      "group": "L'Âge d'Or"
+      "group": "Bande du Faucon"
     },
     {
       "id": 20,
       "label": "Corkus",
       "image": "/images/character/corkus.jpg",
       "bio": "Un membre de la Bande du Faucon, souvent franc et direct dans ses opinions.",
-      "group": "L'Âge d'Or"
+      "group": "Bande du Faucon"
     },
     {
       "id": 21,
       "label": "Pippin",
       "image": "/images/character/pippin.jpg",
       "bio": "Un colosse silencieux mais protecteur, membre de la Bande du Faucon.",
-      "group": "L'Âge d'Or"
+      "group": "Bande du Faucon"
     },
     {
       "id": 22,
       "label": "Gaston",
       "image": "/images/character/gaston.jpg",
       "bio": "Un membre de la Bande du Faucon qui aspire à une vie paisible.",
-      "group": "L'Âge d'Or"
+      "group": "Bande du Faucon"
     },
     {
       "id": 23,
       "label": "Mozgus",
       "image": "/images/character/mozgus.jpg",
       "bio": "Un inquisiteur cruel et fanatique, connu pour ses méthodes brutales.",
-      "group": "Black Swordsman"
+      "group": "Indépendant"
     }
   ],
   "edges": [
