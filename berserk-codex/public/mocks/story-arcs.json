@@ -8,7 +8,7 @@
         "coverImage": "/images/arcs/black-swordsman-cover.webp",
         "plates": [
         "/images/arcs/black-swordsman-1.jpg",
-        "/images/arcs/black-swordsman-2.png"
+        "/images/arcs/black-swordsman-2.jpg"
         ]
         },
       {
@@ -19,7 +19,7 @@
         "coverImage": "/images/arcs/golden-age-cover.webp",
         "plates": [
           "/images/arcs/golden-age-1.jpg",
-          "/images/arcs/golden-age-2.png"
+          "/images/arcs/golden-age-2.webp"
         ]
       },
       {
@@ -38,10 +38,10 @@
         "title": "L'Âge Noir (1999-2002)",
         "period": "Volumes 15-21",
         "summary": "Guts entame sa quête vengeresse contre les God Hand et les Apôtres. Événements majeurs : • Introduction de Puck • Apparition de Mozgus et des Inquisiteurs • Première apparition de Zodd dans l'arc principal • Casca devient instable",
-        "coverImage": "/images/arcs/black-swordsman-cover.webp",
+        "coverImage": "/images/arcs/hunter-cover.webp",
         "plates": [
-        "/images/arcs/black-swordsman-1.jpg",
-        "/images/arcs/black-swordsman-2.png"
+        "/images/arcs/hunter-1.jpg",
+        "/images/arcs/hunter-2.png"
         ]
     },
     {
@@ -52,7 +52,7 @@
         "coverImage": "/images/arcs/millennium-falcon-cover.webp",
         "plates": [
         "/images/arcs/millennium-falcon-1.jpg",
-        "/images/arcs/millennium-falcon-2.png"
+        "/images/arcs/millennium-falcon-2.jpg"
         ]
     },
     {
@@ -62,7 +62,7 @@
         "summary": "Le monde fusionne avec le plan astral, provoquant un chaos sans précédent. Points clés : • Elfhelm et la tentative de guérison de Casca • Apparition du Dieu Mer • Griffith atteint son apogée en Falconia • Le monde envahi par les créatures du plan astral",
         "coverImage": "/images/arcs/fantasia-cover.webp",
         "plates": [
-        "/images/arcs/fantasia-1.jpg",
+        "/images/arcs/fantasia-1.webp",
         "/images/arcs/fantasia-2.webp"
         ]
     }

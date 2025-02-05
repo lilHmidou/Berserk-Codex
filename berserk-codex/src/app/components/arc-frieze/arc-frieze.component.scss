@@ -1,13 +1,10 @@
-//Variable utilisé dans l'ensemble du style :
-// Couleurs
+// Variables
 $berserk-red: #a20505;
 $dark-bg: #111111;
 $gold-accent: #8b7500;
 $blood-border: #8b0000;
-// Polices
 $cinzel-font: 'Cinzel', serif;
 $main-font: Arial, sans-serif;
-// Tailles
 $navbar-height: 70px;
 $mobile-breakpoint: 768px;
 
@@ -15,7 +12,6 @@ $mobile-breakpoint: 768px;
   background: #000;
   min-height: 100vh;
   padding: 4rem 1rem;
-  position: relative;
 }
 
 .section-title {
@@ -23,11 +19,9 @@ $mobile-breakpoint: 768px;
   font-family: $cinzel-font;
   text-align: center;
   font-size: 2.8rem;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
+  margin: 2rem 0 4rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  position: relative;
   padding-bottom: 1rem;
 
   &::after {
@@ -63,35 +57,20 @@ $mobile-breakpoint: 768px;
 
 .timeline-item {
   position: relative;
-  cursor: pointer;
-  z-index: 1;
   padding: 1.5rem;
-  transition: all 0.4s ease;
   flex: 1;
   max-width: 250px;
+  transition: all 0.4s ease;
 
   &:hover {
     transform: translateY(-15px);
-
-    .timeline-marker {
-      background: $gold-accent;
-      transform: scale(1.2);
-    }
-
-    .timeline-content h3 {
-      color: $gold-accent;
-    }
+    .timeline-marker { background: $gold-accent; transform: scale(1.2); }
+    .timeline-content h3 { color: $gold-accent; }
   }
 
-  &.active {
-    .timeline-marker {
-      background: $gold-accent;
-      box-shadow: 0 0 25px rgba(139, 0, 0, 0.8);
-    }
-
-    .timeline-content {
-      opacity: 1;
-    }
+  &.active .timeline-marker {
+    background: $gold-accent;
+    box-shadow: 0 0 25px rgba(139, 0, 0, 0.8);
   }
 }
 
@@ -119,9 +98,8 @@ $mobile-breakpoint: 768px;
 }
 
 @keyframes marker-pulse {
-  0% { transform: scale(0.95); }
+  0%, 100% { transform: scale(0.95); }
   50% { transform: scale(1.05); }
-  100% { transform: scale(0.95); }
 }
 
 .timeline-content {
@@ -129,19 +107,8 @@ $mobile-breakpoint: 768px;
   opacity: 0.8;
   transition: opacity 0.3s ease;
 
-  h3 {
-    color: #fff;
-    font-family: $cinzel-font;
-    font-size: 1.3rem;
-    margin-bottom: 0.8rem;
-    transition: color 0.3s ease;
-  }
-
-  .period {
-    color: $gold-accent;
-    font-size: 1rem;
-    font-style: italic;
-  }
+  h3 { color: #fff; font-family: $cinzel-font; font-size: 1.3rem; margin-bottom: 0.8rem; }
+  .period { color: $gold-accent; font-size: 1rem; font-style: italic; }
 }
 
 .arc-details {
@@ -171,16 +138,8 @@ $mobile-breakpoint: 768px;
     letter-spacing: 1px;
     border-radius: 5px;
 
-    &:hover:not(:disabled) {
-      background: $berserk-red;
-      box-shadow: 0 0 25px rgba(139, 0, 0, 0.5);
-    }
-
-    &:disabled {
-      opacity: 0.3;
-      cursor: not-allowed;
-      border-color: #444;
-    }
+    &:hover:not(:disabled) { background: $berserk-red; box-shadow: 0 0 25px rgba(139, 0, 0, 0.5); }
+    &:disabled { opacity: 0.3; cursor: not-allowed; border-color: #444; }
   }
 }
 
@@ -213,7 +172,6 @@ $mobile-breakpoint: 768px;
     color: #888;
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    display: block;
   }
 
   .summary {
@@ -224,16 +182,19 @@ $mobile-breakpoint: 768px;
     position: relative;
     padding-left: 2rem;
     border-left: 3px solid $berserk-red;
+    margin-top: 20px;
+    padding-right: 1rem;
+    text-align: justify;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 
     &::before {
-      content: '«';
       position: absolute;
       left: -1.5rem;
       top: -1rem;
       color: $berserk-red;
-      font-size: 4rem;
+      font-size: 3rem;
       font-family: $cinzel-font;
-      opacity: 0.3;
+      opacity: 0.6;
     }
   }
 }
@@ -264,22 +225,13 @@ $mobile-breakpoint: 768px;
 @media (max-width: 1200px) {
   .arc-header {
     grid-template-columns: 1fr;
-
-    .cover-image {
-      height: 400px;
-    }
+    .cover-image { height: 400px; }
   }
-
-  .plates-grid .arc-plate {
-    height: 300px;
-  }
+  .plates-grid .arc-plate { height: 300px; }
 }
 
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 2rem;
-    margin-bottom: 3rem;
-  }
+@media (max-width: $mobile-breakpoint) {
+  .section-title { font-size: 2rem; margin-bottom: 3rem; }
 
   .timeline {
     flex-direction: column;
@@ -294,25 +246,14 @@ $mobile-breakpoint: 768px;
     }
   }
 
-  .timeline-item {
-    margin: 3rem 0;
-    max-width: none;
-  }
-
-  .arc-details {
-    padding: 2rem;
-  }
+  .timeline-item { margin: 3rem 0; max-width: none; }
+  .arc-details { padding: 2rem; }
 
   .navigation-buttons {
     flex-direction: column;
     gap: 1rem;
-
-    button {
-      width: 100%;
-    }
+    button { width: 100%; }
   }
 
-  .plates-grid .arc-plate {
-    height: 250px;
-  }
+  .plates-grid .arc-plate { height: 250px; }
 }

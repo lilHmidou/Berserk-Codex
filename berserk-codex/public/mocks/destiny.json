@@ -2,29 +2,30 @@
     "destinys": [
         {
             "image": "/images/destiny/choix1.jpg",
-            "option1": "Jour",
-            "option2": "Nuit"
+            "option1": "Poursuivre la vengeance",
+            "option2": "Chercher la rédemption"
         },
         {
             "image": "/images/destiny/choix2.jpg",
-            "option1": "Sauver",
-            "option2": "Laisser"
+            "option1": "Lutter pour la liberté",
+            "option2": "Se soumettre au destin"
         },
         {
             "image": "/images/destiny/choix3.jpg",
-            "option1": "Aider",
-            "option2": "Dominer"
+            "option1": "Fonder une famille",
+            "option2": "Vivre pour la guerre"
         },
         {
             "image": "/images/destiny/choix4.jpg",
-            "option1": "Combattre",
-            "option2": "S'enfuir"
+            "option1": "L'accepter comme un sacrifice",
+            "option2": "Lutter contre la fatalité"
         },
         {
             "image": "/images/destiny/choix5.jpg",
-            "option1": "Courage",
-            "option2": "Folie"
+            "option1": "Vivre comme un monstre",
+            "option2": "Mourir en héros"
         }
     ]
 }
+
 
