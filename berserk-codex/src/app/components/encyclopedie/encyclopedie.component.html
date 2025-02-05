@@ -15,7 +15,9 @@
     <div *ngFor="let character of sortedCharacters" class="character-card">
       <img ngSrc="{{character.image}}" width="200" height="300" alt="{{character.name}}">
       <div class="character-info">
+        <a class="nav-link" routerLink="/relationships" routerLinkActive="active">
         <h2>{{ character.name }}</h2>
+        </a>
         <p>{{ character.description }}</p>
         <span class="arc">Arc : {{ character.arc }}</span>
       </div>

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {NgForOf, NgOptimizedImage} from '@angular/common';
 import { MockDataService } from '../../services/mock-data.service';
 import { Character } from '../../types/character';
+import {RouterLink, RouterLinkActive} from '@angular/router';
 
 @Component({
   standalone: true,
@@ -9,13 +10,15 @@ import { Character } from '../../types/character';
   templateUrl: './encyclopedie.component.html',
   imports: [
     NgForOf,
-    NgOptimizedImage
+    NgOptimizedImage,
+    RouterLink,
+    RouterLinkActive
   ],
   styleUrls: ['./encyclopedie.component.scss']
 })
 export class EncyclopediaComponent implements OnInit {
   private sortOrder: 'A-Z' | 'Z-A' | 'Apparition' = 'A-Z';
-  private arcOrder = ['Prologue','Black Swordsman','L’Âge d’Or', 'Éclipse', 'L\'Âge Noir'];
+  private arcOrder = ['Prologue','Black Swordsman','L’Âge d’Or', 'Éclipse', 'L\'Âge Noir', 'L\'Âge du Faucon Millenaire'];
   private characters: Character[] = []
 
   constructor(private mockDataService: MockDataService) {}
